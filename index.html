@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="text/javascript">
+        (function (d, s, id) {
+          var js,
+            el = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {
+            return;
+          }
+          js = d.createElement(s);
+          js.async = true;
+          js.src = 'https://s3.ap-south-1.amazonaws.com/conferbot.defaults/dist/v1/widget.min.js';
+          js.id = id;
+          js.charset = 'UTF-8';
+          el.parentNode.insertBefore(js, el);
+          // Initializes the widget when the script is ready
+          js.onload = function () {
+              var w = window.ConferbotWidget("6512c1d9f016140655d567a4", "live_chat");
+          };
+        })(document, 'script', 'conferbot-js');
+      </script>
+
+    <div class="nav">
+        <div class="image">
+        <img src="images/logo.png">
+        </div>
+        <h1>Doctor's Appointment Hub</h1>
+            <ul>
+                <a href="">Home</a>
+                <a href="about.html">About</a>
+                <a  href="doctors.html">Doctors</a>
+                <a  href="blog.html">Blogs</a>
+                <button id="Login">Log In</button>
+            </ul>
+    </div>
+    <div class="container1">
+        <div class="doctorImg">
+  </div>
+        <div class="content">
+    <h1>Take Care of your Health and Happiness with Us.</h1>
+    <div class="tags">
+        <div class="tag1">
+         100% <br>Dedicated Service
+        </div>
+        <div class="tag1">
+            245+<br>Patients A Year
+           </div>
+           <div class="tag1">
+            45+<br>HealthCare Experts
+           </div>
+           <div class="tag1">
+            7K+<br>Happy Smiles
+           </div>
+    </div>
+    </div>
+    </div>
+    <div class="container2">
+        <div class="boxes">
+            <h1>Why Choose Doctor's Appointment Hub ?</h1>
+            <p>We are a dedicated team of medical who strive to improve our community with best healthcare service.</p>
+        </div>
+        <div class="box-container">
+            <div class="box1">
+    <h1>Specialized Staff</h1>
+    <p>Our Specialized team of doctors will  provide the  best HealthCare to treat the rare,complex health conditions. </p>
+            </div>
+            <div class="box2">
+          <h1>Accurate Diagonsis</h1>
+          <p>The best treatment begins with the right diagonsis.We guarantee accurate  diagonsis for your health condition.</p>
+            </div>
+        <div class="box3">
+            <h1>Specialized Labs</h1>
+            <p>At Doctor's Appointment Hub we priortize the well being of our patients above everything else  and ensure the best medical  service</p>
+                    </div> 
+    </div>                                                        
+    </div>
+</div>
+    
+        <div class="container3">
+            <div class="container">
+                <h1>Symptom Checker</h1>
+                <form id="symptomForm">
+                    <label for="symptoms">Enter your symptoms (comma-separated):</label>
+                    <input type="text" id="symptoms" name="symptoms" required>
+                    <button type="button" onclick="checkSymptoms()">Check Symptoms</button>
+                </form>
+                <div id="result"></div>
+            </div>
+        <div class="containers">
+            <h1>Malnutrition Checker</h1>
+            <form id="malnutrition-form">
+                <div class="form-group">
+                    <label for="age">Age (in years):</label>
+                    <input type="number" id="age" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="weight">Weight (in kg):</label>
+                    <input type="number" id="weight" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="height">Height (in cm):</label>
+                    <input type="number" id="height" required>
+                </div>
+                
+                <button type="button" id="check-malnutrition">Check Malnutrition</button>
+            </form>
+            <div id="result-container"></div>
+        </div>
+
+
+    </div>
+
+   
+
+   
+    <div class="footer">
+        <img src="images/logo.png">
+        <span>Doctors's Appointment Hub</span>
+        <ul>
+            <p>Follow Us on</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </ul>
+        <div class="footer-details">
+        <p>24/7 Medical Service</p>
+        <p>Contact:</p>
+        <i class="fa-solid fa-phone"></i><span>+914333892867</span>
+        <i class="fa-solid fa-phone"></i>
+        <span>+919945342911</span>
+        <p>For Appointment:Click on chat icon</p>
+        </div>
+        <div class="loginPage">
+            <input type="text" placeholder="Enter Email" id="email"><br>
+            <input type="password" placeholder="Enter Password" id="pass"><br>
+            <button id="LoginBtn">Log In</button>
+        </div>
+<script src="script.js"></script>
+
+</body>
+</html>
